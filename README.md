@@ -1,16 +1,15 @@
-# React + Vite
+Live Demo: 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://react-project-beryl-theta.vercel.app/
 
-Currently, two official plugins are available:
+Reflection:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project involved building a fully responsive URL shortening application by using React, and integrating the Bitly API to handle dynamic link generation. One of the most significant challenges that I faced was managing asynchronous API requests while keeping the application state up to date and consistent. At first, I struggled with dynamically updating the list of shortened URLs after each submission. I was able to resolve this issue by structuring state with React's "useState" hook to make sure that updates to the application triggered re-rendering of components.
 
-## React Compiler
+Another challenge was using form validation. I needed to provide feedback to users when an invalid URL was submitted. I resolved this by adding conditional checks and displaying error messages to help users correct their input. This improves usability and user experience.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Making sure that the application was fully responsive across multiple different devices was also a challenge. I resolved this by using CSS techniques such as flexbox and media queries to create layouts that adapt to varying screen sizes.
 
-## Expanding the ESLint configuration
+Working with the Bitly API was also challengeing because it required understanding authentication,constructing HTTP requests, and handling API errors. I overcame this by reseaching and deepening my understanding of the Bitly API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If I were to improve this project, I would add local storage to keep the shortened links, and add UI animations.
