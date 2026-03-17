@@ -12,4 +12,4 @@ Making sure that the application was fully responsive across multiple different 
 
 Working with the Bitly API was also challengeing because it required understanding authentication,constructing HTTP requests, and handling API errors. I overcame this by reseaching and deepening my understanding of the Bitly API.
 
-If I were to improve this project, I would add local storage to keep the shortened links, and add UI animations.
+If I were to improve this project, I would add UI animations to make the application more interactive.
