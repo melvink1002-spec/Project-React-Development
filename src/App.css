@@ -1,0 +1,152 @@
+.nav {
+  background: white;
+  padding: 1.5rem 0;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.nav-links a {
+  color: var(--grayish-violet);
+  font-weight: 600;
+}
+
+.nav-auth {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn.small {
+  padding: 0.5rem 1.5rem;
+}
+
+.form {
+  background: var(--dark-violet);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  margin-top: -4rem;
+  display: flex;
+  gap: 1rem;
+
+  background-image: url("/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.error-input {
+  border: 2px solid var(--red);
+}
+
+.error {
+  color: var(--red);
+  font-style: italic;
+}
+
+.item {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item .original {
+  border-bottom: none;
+}
+
+.right a {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.right button {
+  background: var(--cyan);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 700;
+}
+
+.right button.copied {
+  background: var(--dark-violet);
+}
+
+.stats {
+  background: var(--off-white);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.boost {
+  background: var(--dark-violet);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+
+  background-image: url("/bg-boost-desktop.svg");
+}
+
+.shortener-section {
+  background: var(--off-white);
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.footer {
+  background: var(--very-dark-violet);
+  color: white;
+  padding: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .form {
+    flex-direction: column;
+    background-image: url("/bg-shorten-mobile.svg");
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .boost {
+    background-image: url("/bg-boost-mobile.svg");
+  }
+}
